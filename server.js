@@ -12,7 +12,7 @@ connectDB();
 
 // Middleware
 app.use(express.json());
-app.use(limiter);
+app.use(limiter);//applies rate-limiting to every request, ensuring no IP exceeds 30 requests per minute.
 
 // Routes
 app.use('/api/v1/chapters', chapterRoutes);
