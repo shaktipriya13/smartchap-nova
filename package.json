@@ -1,0 +1,26 @@
+{
+  "name": "smartchap-nova",
+  "version": "1.0.0",
+  "description": "chapter-performance-api/ ├── config/ # Configuration files (e.g., database, Redis) │ ├── db.js │ ├── redis.js │ └── config.js ├── controllers/ # Logic for handling API requests │ └── chapterController.js ├── middlewares/ # Custom middleware (e.g., authentication, rate-limiting) │ ├── auth.js │ ├── errorHandler.js │ └── rateLimiter.js ├── models/ # Database schema for chapters │ └── Chapter.js ├── routes/ # API routes │ └── chapterRoutes.js ├── utils/ # Helper functions (e.g., caching, file parsing) │ ├── cache.js │ └── fileParser.js ├── .env # Environment variables (sensitive info) ├── .gitignore # Files to ignore in Git ├── package.json # Project metadata and dependencies ├── server.js # Main entry point for the app ├── README.md # Project documentation └── .github/workflows/ # GitHub Actions for deployment (bonus) └── deploy.yml",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js",
+    "dev": "nodemon server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^16.5.0",
+    "express": "^5.1.0",
+    "express-rate-limit": "^7.5.0",
+    "mongoose": "^8.15.1",
+    "multer": "^2.0.1",
+    "rate-limit-redis": "^4.2.1",
+    "redis": "^5.5.5"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.10"
+  }
+}
